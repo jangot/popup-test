@@ -1,0 +1,52 @@
+body, html {
+    min-height: 100%;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: black;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+}
+
+.overlay.showElement {
+    opacity: 0.5;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+.popup.showElement {
+    opacity: 1;
+}
+
+.popup .close {
+    margin: 7px;
+}
+
+.popup .panel {
+    max-width: 500px;
+
+}
+
+.panel {
+    margin-top: 10px;
+}
+.panel-heading {
+}
+.panel-body {
+}
